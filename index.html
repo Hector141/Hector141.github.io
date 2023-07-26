@@ -42,12 +42,34 @@
 
 
           <div class="datos-about" onclick="scrollToSection('About')">
-            <h3>Hola, mi nombre es</h3>
-            <h2>
-              Hector Cardoso.
-              <br />
-              construyo cosas para la web
-            </h2>
+            <h3>Hola, mi nombre es<span class="barrita">_</span></h3>
+            <svg viewBox="0 0 600 300">
+              <!-- Symbol-->
+              <symbol id="s-text">
+                <text class="texto" text-anchor="middle" x="50%" y="50%" dy=".35em">Cardoso Hector</text>
+              </symbol>
+              <!-- Duplicate symbols-->
+              <use class="text" xlink:href="#s-text"></use>
+              <use class="text" xlink:href="#s-text"></use>
+              <use class="text" xlink:href="#s-text"></use>
+              <use class="text" xlink:href="#s-text"></use>
+              <use class="text" xlink:href="#s-text"></use>
+            </svg>
+            
+
+            <div class="content">
+              <div class="content__container">
+                <ul class="content__container__list">
+                  <li class="content__container__list__item">Construyo cosas para la web!</li>
+                  <li class="content__container__list__item">Soy Full Stack Developer!</li>
+                  <li class="content__container__list__item">Investigo y aprendo nuevas tecnologías!</li>
+                  <li class="content__container__list__item">Desarrollo páginas web responsivas!</li>
+                </ul>
+              </div>
+            </div>
+            
+
+
             <p>
               Soy un desarrollador Full Stack con enfoque en tecnologías web y muchas ganas de aprender y crecer en el mundo de la
               programación. Me especializo en crear soluciones innovadoras y funcionales que satisfacen las necesidades de los usuarios.
@@ -151,16 +173,15 @@
                     
                     </div>
 
-
-
     <div class="frase">
       <img  src="./logos/imagine1.png" alt="HTML5" />
     </div>
   
+
+
   
   
   </div>
-  
 
   <div id="contacto" class="contacto">
     <div>
