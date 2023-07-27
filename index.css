@@ -645,9 +645,6 @@ svg {
     border-radius: 25px;
   }
 
-
-
-
 .cont {
   display: flex;
   flex-direction: column;
@@ -730,6 +727,7 @@ svg {
   }
   .content {
     width: fit-content;
+    margin-top: 40px;
   }
 
   .content__container {
