@@ -759,6 +759,7 @@ svg {
     top: 0;
     color: #16a085;
     font-size: 100px;
+    height: 100px;
     line-height: 40px;
     animation: opacity 2s infinite;
   }
@@ -766,6 +767,7 @@ svg {
   .content__container:after {
     margin-top: 12px;
     content: "]";
+    height: 100px;
     position: absolute;
     top: 0;
     color: #16a085;
