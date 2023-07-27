@@ -752,29 +752,11 @@ svg {
   }
 
   .content__container:before {
-
-    content: "[";
-    position: absolute;
-    left: 0;
-    top: 10px;
-    color: #16a085;
-    font-size: 100px;
-    height: 100px;
-    line-height: 40px;
-    animation: opacity 2s infinite;
+    content: "";
   }
 
   .content__container:after {
-
-    content: "]";
-    height: 100px;
-    position: absolute;
-    right: -10px;
-    top: 10px;
-    color: #16a085;
-    font-size: 100px;
-    line-height: 40px;
-    animation: opacity 2s infinite;
+    content: "";
   }
 
   .datos-about h3 {
