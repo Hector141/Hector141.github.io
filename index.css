@@ -521,13 +521,18 @@ svg {
 
 .about-cont .about-info {
   position: relative;
-  background-color: #072444;
-  flex-direction: column;
+  background-color: #171B2B;
   box-sizing: border-box;
   padding: 30px;
   text-align: center;
   font-family: sans-serif;
   z-index: 1;
+}
+
+.bongo{ 
+display: flex;
+margin-bottom: auto;
+margin-top: 50px;
 }
 
 .about-cont,
@@ -646,6 +651,7 @@ svg {
   }
 }
 
+
 @media screen and (max-width: 1050px) {
   .about-cont {
     height: fit-content;
@@ -661,16 +667,6 @@ svg {
     padding: 5px;
     position: relative;
     overflow: hidden;
-  }
-
-  .about-cont .about-info {
-    position: relative;
-    background-color: #072444;
-    flex-direction: column;
-    box-sizing: border-box;
-    text-align: center;
-    font-family: sans-serif;
-    z-index: 1;
   }
 
   .about-cont,
@@ -693,14 +689,11 @@ svg {
   .about-info {
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
   }
-  .about-img img {
-    height: 200px;
-    width: 150px;
-    border: 2px solid black;
-    border-radius: 12px;
+  .bongo{
+    margin: 0;
+    margin-bottom: 10px;
   }
 
   .about {
@@ -709,14 +702,6 @@ svg {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: fit-content;
-  }
-
-  .about-data {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 100%;
-    height: 100%;
   }
 
   .about-data p,
@@ -724,15 +709,6 @@ svg {
     font-size: 17px;
   }
 
-  .sobreMi {
-    margin-top: -5px;
-    color: #16a085;
-  }
-
-  .about-data p span {
-    color: #16a085;
-    font-weight: bold;
-  }
   .intereses-cont {
     display: flex;
     flex-direction: column;
@@ -740,27 +716,6 @@ svg {
     align-items: center;
     width: 100%;
     height: fit-content;
-  }
-
-  .intereses {
-    width: 100%;
-    height: fit-content;
-  }
-
-  .intereses h2 {
-    color: #16a085;
-    margin-top: 5%;
-  }
-  .intereses-cont p {
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0f172a;
-    margin: 8px;
-    padding: 5px;
-    border-radius: 5px;
-    width: 180px;
   }
 
   .about-cont::before {
@@ -772,7 +727,6 @@ svg {
     transform: none;
     animation: none;
   }
-
 
 }
 
