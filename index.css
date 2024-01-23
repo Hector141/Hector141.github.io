@@ -100,7 +100,7 @@ a {
 .datos-about {
   width: 60%;
   margin-left: 10%;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
@@ -534,7 +534,9 @@ display: flex;
 margin-bottom: auto;
 margin-top: 50px;
 }
-
+.contacto{
+  margin-top: 30px;
+}
 .about-cont,
 .about-cont .about-info {
   box-shadow: 0 0 2px rgb(24, 20, 255), 0 0 5px rgba(0, 0, 0, 1),
@@ -613,6 +615,53 @@ margin-top: 50px;
   width: 180px;
 }
 
+.carousel-inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item{
+  background-color: #171B2B;
+  width: 95%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-item img{
+  width: 50%;
+}
+.carousel-caption{
+  display: flex;
+  position: absolute;
+  width: 450px;
+  top: 10%;
+  left:60%; 
+}
+
+.p-cont{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.p-cont p{
+  margin: 5px;
+  font-size: 25px;
+  background-color: #16a0841a;
+  border-radius: 5px;
+}
+
+.proyect-resumen {
+  position: absolute;
+  bottom: 20px; 
+  left: 0;
+  width: 100%; 
+  padding: 5px; 
+}
+
 @keyframes opacity {
   0%,
   100% {
@@ -652,7 +701,26 @@ margin-top: 50px;
 }
 
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1368px) {
+  .carousel-caption{
+    top: 10%;
+    left: 55%;
+  }
+
+  .p-cont p{
+    margin: 5px;
+    font-size: 18px;
+  }
+
+  .proyect-resumen {
+    position: relative;
+
+    margin-top: 35px;
+   
+  }
+}
+
+@media screen and (max-width: 1081px) {
   .about-cont {
     height: fit-content;
     width: fit-content;
@@ -726,6 +794,37 @@ margin-top: 50px;
     background-color:#072444;
     transform: none;
     animation: none;
+  }
+
+
+
+  .carousel-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  
+  .carousel-item{
+    background-color: #171B2B;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+  }
+  
+  .carousel-item img{
+    width: 100%;
+  }
+
+  .carousel-caption{
+    position: relative;
+    top: 70%;
+    left: 25%;
+    height: 250px;
+  
   }
 
 }
@@ -937,4 +1036,18 @@ margin-top: 50px;
   .datos-about h3 {
     font-size: 30px;
   }
+
+
+  .carousel-item{
+    background-color: #171B2B;
+    width: 95%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .carousel-item img{
+    width: 100%;
+    height: 200px;
+  }
+
 }
